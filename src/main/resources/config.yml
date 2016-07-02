@@ -1,0 +1,6 @@
+language: eng
+default:
+  tag: Guest
+  format: "<[{%tag}] {%0}> {%1}"
+format:
+  Admin: "<[{%tag}] {%0}> {%1}"

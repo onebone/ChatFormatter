@@ -1,0 +1,27 @@
+name: ChatFormatter
+version: "1.0.0"
+author: onebone
+api: [1.0.0]
+main: me.onebone.chatformatter.ChatFormatter
+
+permissions:
+  chatformatter:
+    description: Includes all permissions of ChatFormatter
+    children:
+      chatformatter.command:
+        description: Allows player to use all commands
+        children:
+          chatformatter.command.cformat:
+            description: Allows player to use /cformat
+            children:
+              chatformatter.command.cformat.add:
+                description: Allows player to use /cformat add
+              chatformatter.command.cformat.remove:
+                description: Allows player to use /cformat remove
+              chatformatter.command.cformat.list:
+                description: Allows player to use /cformat list
+              chatformatter.command.cformat.set:
+                description: Allows player to use /cformat set
+commands:
+  cformat:
+    usage: /cformat <add|set> <name> <format|player>
