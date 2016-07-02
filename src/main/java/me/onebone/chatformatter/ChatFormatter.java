@@ -26,6 +26,13 @@ import cn.nukkit.utils.Utils;
 public class ChatFormatter extends PluginBase implements Listener{
 	private Map<String, String> lang, players;
 	
+	public void setPrefix(String player, String prefix){
+		this.players.put(player.toLowerCase(), prefix);
+		Config config = new Config(new File(this.getDataFolder(), "players.yml"));
+		config.setAll(new LinkedHashMap<String, Object>(this.players));
+		config.save();
+	}
+	
 	public void onEnable(){
 		this.saveDefaultConfig();
 		
