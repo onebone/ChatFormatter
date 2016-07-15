@@ -137,7 +137,7 @@ public class ChatFormatter extends PluginBase implements Listener{
 	}
 	
 	public String getMessage(String key){
-		return this.getMessage(key);
+		return this.getMessage(key, new Object[]{});
 	}
 	
 	public String getMessage(String key, Object... params){
