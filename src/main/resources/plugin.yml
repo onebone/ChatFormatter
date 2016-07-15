@@ -25,3 +25,5 @@ permissions:
 commands:
   cformat:
     usage: /cformat <add|set> <name> <format|player>
+    permission: chatformatter.command.cformat
+    description: "Prefix management command"
